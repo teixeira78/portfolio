@@ -1,0 +1,112 @@
+.product-showcase {
+  padding-bottom: 30px;
+
+  .showcase-speaker {
+    background-image: url("../../assets/home/desktop/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-position: -100% 10%;
+    height: 560px;
+    background-color: var(--primary-orange);
+  }
+
+  .showcase-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 48px;
+
+    .showcase-img {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .showcase-content-speaker--big {
+      position: absolute;
+      max-width: 350px;
+      right: 95px;
+      top: 50%;
+      transform: translate(0, -50%);
+      color: var(--pure-white);
+
+      .showcase-title {
+        font-size: 56px;
+        letter-spacing: 2px;
+        line-height: 58px;
+        margin-bottom: 24px;
+      }
+
+      .showcase-description {
+        margin-bottom: 40px;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0px;
+      }
+
+      .showcase-link {
+        background-color: var(--pure-black);
+
+        &:hover {
+          background-color: var(--hover-grey);
+        }
+      }
+    }
+  }
+
+  .showcase-img-speaker {
+    position: absolute;
+    bottom: -15px;
+    left: 117px;
+    height: 493px;
+    max-width: 410px;
+  }
+
+  .showcase-title-small {
+    letter-spacing: 2px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .showcase-speaker-small {
+    height: 320px;
+    background-image: url("../../assets/home/desktop/image-speaker-zx7.jpg");
+    background-repeat: no-repeat;
+
+    .showcase-content {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+      left: 95px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  .showcase-earphones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 320px;
+    gap: 30px;
+
+    .showcase-img {
+      border-radius: 8px !important;
+      overflow: hidden;
+    }
+
+    .showcase-content-earphones {
+      flex: 1;
+      align-content: center;
+      border-radius: 8px;
+      padding-left: 95px;
+      background-color: var(--neutral-medium);
+
+      .showcase-title-small {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}

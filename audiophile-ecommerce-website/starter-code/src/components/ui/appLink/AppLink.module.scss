@@ -1,0 +1,39 @@
+/* AppLink.module.css */
+.defaultStyle {
+  // display: inline-block;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: auto;
+  font-family: inherit;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: var(--pure-white);
+}
+
+.defaultStyle:active {
+  transition: all 0.1s ease-out;
+  opacity: 0.5;
+}
+
+.contained {
+  background-color: var(--primary-orange);
+}
+
+.contained:hover {
+  background-color: var(--secondary-orange);
+}
+
+.outlined {
+  color: var(--pure-black);
+  border: 1px solid var(--pure-black);
+}
+
+.outlined:hover {
+  background-color: var(--pure-black);
+  color: var(--pure-white);
+}
