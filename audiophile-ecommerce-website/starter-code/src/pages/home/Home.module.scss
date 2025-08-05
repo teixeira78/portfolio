@@ -7,3 +7,11 @@
   background-position: 60% 70%;
   background-repeat: no-repeat;
 }
+
+.about-us {
+  padding: 200px 0px;
+
+  @media (max-width: 990px) {
+    padding: 96px 0px;
+  }
+}

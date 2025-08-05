@@ -15,7 +15,7 @@ function ProductsShowcase() {
         <div
           className={`${classes["showcase-img"]} ${classes["showcase-img-speaker"]}`}
         >
-          <img src={SpeakersImg} alt="Stein Speaker" />
+          {/* <img src={SpeakersImg} alt="Stein Speaker" /> */}
         </div>
         <div className={classes["showcase-content-speaker--big"]}>
           <h3 className={classes["showcase-title"]}>ZX9 SPEAKER</h3>

@@ -1,6 +1,4 @@
 .product-showcase {
-  padding-bottom: 30px;
-
   .showcase-speaker {
     background-image: url("../../assets/home/desktop/pattern-circles.svg");
     background-repeat: no-repeat;
@@ -21,6 +19,17 @@
         height: 100%;
         object-fit: cover;
       }
+    }
+
+    .showcase-img-speaker {
+      position: absolute;
+      bottom: -15px;
+      left: 117px;
+      height: 493px;
+      background-image: url("../../assets/home/desktop/image-speaker-zx9.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 410px;
     }
 
     .showcase-content-speaker--big {
@@ -53,14 +62,6 @@
         }
       }
     }
-  }
-
-  .showcase-img-speaker {
-    position: absolute;
-    bottom: -15px;
-    left: 117px;
-    height: 493px;
-    max-width: 410px;
   }
 
   .showcase-title-small {
@@ -107,6 +108,116 @@
       .showcase-title-small {
         margin-bottom: 32px;
       }
+    }
+  }
+}
+
+@media (max-width: 1064px) {
+  .product-showcase {
+    .showcase-speaker {
+      background-position: -200px 10%;
+    }
+
+    .showcase-card {
+      .showcase-img-speaker {
+        left: 30px;
+      }
+
+      .showcase-content-speaker--big {
+        right: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .product-showcase {
+    .showcase-speaker {
+      height: 490px;
+    }
+
+    .showcase-card {
+      .showcase-img-speaker {
+        left: 41px;
+        width: 350px;
+        bottom: -80px;
+      }
+
+      .showcase-content-speaker--big {
+        right: 41px;
+      }
+    }
+
+    .showcase-speaker-small {
+      background-position: -180px 0%;
+      .showcase-content {
+        left: 41px;
+      }
+    }
+
+    .showcase-earphones {
+      .showcase-content-earphones {
+        padding-left: 41px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .product-showcase {
+    .showcase-card {
+      .showcase-img-speaker {
+        left: 41px;
+        // max-width: 350px;
+      }
+
+      .showcase-content-speaker--big {
+        right: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .product-showcase {
+    .showcase-speaker {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 64px;
+      height: 720px;
+      background-position: 50% 130%;
+
+      .showcase-img-speaker {
+        position: static;
+        height: 240px;
+        background-position-x: 50%;
+        background-image: url("../../assets/home/tablet/image-speaker-zx9.png");
+      }
+
+      .showcase-content-speaker--big {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        transform: none;
+      }
+    }
+
+    .showcase-earphones {
+      gap: 11px;
+    }
+  }
+}
+
+@media (max-width: 745px) {
+  .product-showcase {
+    .showcase-speaker-small {
+      background-image: url("../../assets/home/tablet/image-speaker-zx7.jpg");
+      background-position: 0%;
     }
   }
 }

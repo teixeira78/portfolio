@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import "../assets/css/global.scss";
 import Navbar from "../components/navbar/Navbar";
 import Container from "../components/container/Container";
+import Footer from "../components/footer/Footer";
 
 function BaseLayout() {
   return (
@@ -9,9 +10,8 @@ function BaseLayout() {
       <Navbar />
       <div className="content">
         <Outlet />
-        {/* content */}
       </div>
-      {/* footer */}
+      <Footer />
     </div>
   );
 }

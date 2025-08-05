@@ -16,7 +16,7 @@ function Home() {
       <section id="#product-showcase">
         <ProductsShowcase />
       </section>
-      <section id="#about-us">
+      <section id="#about-us" className={classes["about-us"]}>
         <AboutUs />
       </section>
     </>
