@@ -1,0 +1,18 @@
+$light-gold: #f3e3a8;
+$darker-gray: #6b7280;
+$light-gray: #e5e7eb;
+$gray: #d1d5db;
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize !important;
+  letter-spacing: 0% !important;
+  font-family: inherit !important;
+  border-radius: 0px !important;
+
+  &:hover {
+    background-color: $light-gold !important;
+  }
+}

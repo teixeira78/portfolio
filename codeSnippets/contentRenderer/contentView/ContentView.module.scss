@@ -1,0 +1,114 @@
+$gray: #e5e7eb;
+$gold: #c0842a;
+$black: #1a1a1a;
+
+.content-view-container {
+  display: grid;
+  grid-template-columns: 1fr 323px;
+  margin: 40px 0px;
+
+  .container {
+    .content-container {
+      outline: 1px solid $gray;
+      outline-offset: 0px;
+      padding: 40px 24px;
+
+      .back-link {
+        margin-left: 20px;
+        text-decoration: none;
+        color: $black !important;
+        font-size: 14px;
+        font-weight: 500;
+
+        span {
+          &::before {
+            content: url("../../../assets/icons/arrowBack.svg");
+            margin-right: 8px;
+          }
+        }
+      }
+
+      .badge-container {
+        margin-top: 32px;
+        margin-bottom: 16px;
+      }
+
+      .content-metadata {
+        display: flex;
+        align-items: center;
+        color: $black;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 8px;
+
+        > :last-of-type {
+          &::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 18px;
+            background: url("../../../assets//icons/goldDot.svg") no-repeat
+              center;
+            background-size: contain;
+            vertical-align: middle;
+            margin: 0 8px;
+          }
+        }
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-bottom: 24px;
+        font-weight: 700;
+      }
+
+      p {
+        margin-bottom: 16px;
+      }
+
+      a {
+        color: $gold !important;
+      }
+
+      a,
+      p,
+      li,
+      ol {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18.4px;
+        color: #6b7280;
+      }
+
+      ul {
+        margin-bottom: 32px;
+        padding-left: 30px;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-view-container {
+    grid-template-columns: 1fr;
+
+    .container {
+      margin-bottom: 30px;
+    }
+  }
+}

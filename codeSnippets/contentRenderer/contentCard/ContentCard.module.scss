@@ -1,0 +1,186 @@
+$gray: #e5e7eb;
+$darker-gray: #6b7280;
+$blue: #3f83f8;
+$gold: #c0842a;
+
+.card {
+  padding: 16px;
+  background-color: transparent;
+  outline: 1px solid $gray;
+  outline-offset: 0px;
+  max-width: 410px;
+
+  .card-img-container {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    margin-bottom: 16px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  .card-bottom {
+    .content-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+
+      .content-date {
+        color: $darker-gray;
+        font-weight: 350;
+        font-size: 12px;
+        line-height: 16.39px;
+      }
+
+      .content-category {
+        font-size: 14px;
+        color: $blue;
+        border-color: $blue;
+        padding: 2px 8px;
+      }
+    }
+    .content-title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28.8px;
+      margin-bottom: 8px;
+      text-transform: capitalize;
+    }
+
+    .content-description {
+      font-size: 14px;
+      line-height: 19.12px;
+      font-weight: 350;
+      color: $darker-gray;
+      margin-bottom: 16px;
+    }
+
+    .content-title,
+    .content-description {
+      /* Enables the flexbox-like display mode required for line clamping */
+      display: -webkit-box;
+
+      /* Limits the content to exactly 2 lines */
+      -webkit-line-clamp: 2;
+
+      /* Sets the direction of the content layout to vertical */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+
+      /* Adds "..." when text is truncated */
+      text-overflow: ellipsis;
+
+      /* Sets the height of each line of text to 1.2 times the font size */
+      line-height: 1.2em;
+
+      /* Non-webkit version of line clamping (for broader browser support) */
+      line-clamp: 2;
+
+      /* Forces the element to be at least as tall as 2 lines of text */
+      min-height: calc(2 * 1.2em);
+    }
+
+    .content-author {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 4px;
+      margin-bottom: 16px;
+
+      .author-avatar-container {
+        width: 24px;
+        height: 24px;
+        overflow: hidden;
+        border-radius: 999px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      .author-name {
+        color: black;
+        text-transform: capitalize;
+        font-size: 14px;
+      }
+    }
+
+    .card-link-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+
+      .card-link {
+        display: flex;
+        gap: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: $gold;
+        transition: color 0.2s ease-in;
+
+        &::after {
+          content: url("../../../assets/icons/arrowIcon.svg");
+          transform: translateY(1.5px);
+        }
+
+        &:hover {
+          color: #e29b31;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    padding: 14px;
+    .card-img-container {
+      height: 240px;
+      margin-bottom: 12px;
+    }
+
+    .card-bottom {
+      .content-info {
+        .content-category {
+          font-size: 12px;
+        }
+      }
+
+      .card-link-container {
+        .card-link {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    .card-bottom {
+      .content-info {
+        .content-category {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 100%;
+  }
+}
