@@ -1,0 +1,11 @@
+.social-links {
+  padding: 0;
+  .social-link {
+    color: var(--pure-white);
+    font-size: 24px;
+
+    &:hover {
+      color: var(--primary-orange);
+    }
+  }
+}

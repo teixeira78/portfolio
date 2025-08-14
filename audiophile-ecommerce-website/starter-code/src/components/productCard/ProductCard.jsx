@@ -4,9 +4,9 @@ import HeadphonesImg from "../../assets/shared/desktop/image-category-thumbnail-
 import SpeakersImg from "../../assets/shared/desktop/image-category-thumbnail-speakers.png";
 import { NavLink } from "react-router-dom";
 
-function ProductCard() {
+function ProductCard({ className }) {
   return (
-    <NavLink className={classes["card-container"]}>
+    <NavLink className={`${classes["card-container"]} ${className}`}>
       <div className={classes["product-image"]}>
         <img src={SpeakersImg} alt="Headphones Thumbnail" />
       </div>

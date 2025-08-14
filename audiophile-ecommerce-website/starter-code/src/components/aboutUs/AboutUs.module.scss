@@ -51,13 +51,25 @@
 
     .aboutUs-content {
       align-items: center;
+      max-width: 600px;
     }
 
     .aboutUs-image {
-      height: 300px;
+      min-height: 300px;
       width: 100%;
       background-image: url("../../assets/shared/tablet/image-best-gear.jpg");
       background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+@media (max-width: 545px) {
+  .aboutUs-container {
+    .aboutUs-content {
+      .title {
+        font-size: 28px;
+      }
     }
   }
 }

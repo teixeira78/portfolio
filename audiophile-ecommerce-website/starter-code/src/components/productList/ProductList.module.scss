@@ -4,4 +4,10 @@
   gap: 30px;
   padding-top: 160px;
   padding-bottom: 160px;
+
+  @media (max-width: 745px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
 }

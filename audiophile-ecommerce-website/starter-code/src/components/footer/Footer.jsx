@@ -5,6 +5,7 @@ import Logo from "../../assets/shared/desktop/logo.svg";
 import NavLinks from "../ui/navLinks/NavLinks";
 import UList from "../ui/uList/UList";
 import { SOCIAL_LINKS } from "../../utils/constants";
+import SocialsLinks from "../ui/socialsLinks/SocialsLinks";
 
 function Footer() {
   return (
@@ -14,7 +15,7 @@ function Footer() {
           <div className={classes.logo}>
             <img src={Logo} alt="Audiphile Logo" />
           </div>
-          <NavLinks />
+          <NavLinks className={classes["navigation-links"]} />
         </div>
         <div className={classes.content}>
           <p className={classes.description}>
@@ -23,25 +24,18 @@ function Footer() {
             to helping you get the most out of personal audio. Come and visit
             our demo facility - we’re open 7 days a week.
           </p>
-          {
-            <UList
-              className={classes["social-media-links"]}
-              items={SOCIAL_LINKS}
-              renderItem={(socialLink, index) => (
-                <AppNavLink
-                  className={classes["social-link"]}
-                  key={index}
-                  to={socialLink.url}
-                >
-                  {<socialLink.Icon />}
-                </AppNavLink>
-              )}
-            />
-          }
+          <SocialsLinks
+            className={`${classes["d--flex"]} ${classes["social-media-links-default"]}`}
+          />
         </div>
-        <p className={classes["copyright"]}>
-          Copyright 2021. All Rights Reserved
-        </p>
+        <div className={classes.bottom}>
+          <p className={classes["copyright"]}>
+            Copyright 2021. All Rights Reserved
+          </p>
+          <SocialsLinks
+            className={`${classes["d--flex"]} ${classes["social-media-links-mobile"]}`}
+          />
+        </div>
       </Container>
     </footer>
   );

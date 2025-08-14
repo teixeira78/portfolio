@@ -42,3 +42,25 @@
     // width: 80%;
   }
 }
+
+@media (max-width: 880px) {
+  .hero {
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-content {
+    max-width: 379px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 415px) {
+  .hero {
+    .hero-content {
+      .hero-title {
+        font-size: 36px;
+      }
+    }
+  }
+}

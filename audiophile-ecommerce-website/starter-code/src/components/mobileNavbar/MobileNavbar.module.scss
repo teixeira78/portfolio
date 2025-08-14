@@ -1,0 +1,21 @@
+.mobile-navbar-container {
+  display: none;
+
+  @media (max-width: 880px) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      position: absolute;
+      left: 82px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .logo {
+      position: static;
+    }
+  }
+}

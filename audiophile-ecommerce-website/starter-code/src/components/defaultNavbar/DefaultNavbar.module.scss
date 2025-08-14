@@ -1,0 +1,24 @@
+.default-navbar-container {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
+
+  .links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; /* prevent wrapping */
+  }
+
+  .cart-button {
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 880px) {
+  .default-navbar-container {
+    display: none;
+  }
+}

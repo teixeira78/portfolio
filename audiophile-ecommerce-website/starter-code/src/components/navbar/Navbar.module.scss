@@ -6,11 +6,8 @@
   background-color: transparent;
   .nav-container {
     position: relative;
-    display: flex;
-    padding: 35px 30px;
-    justify-content: space-between;
-    flex: 1;
-    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
 
     &::after {
       content: "";
@@ -22,22 +19,6 @@
       padding: 0 30px;
       background-color: var(--pure-white);
       opacity: 0.2;
-    }
-
-    .logo-container {
-      flex-shrink: 0;
-    }
-
-    .links {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      white-space: nowrap; /* prevent wrapping */
-    }
-
-    .cart-button {
-      margin-left: auto; /* push button to right */
-      flex-shrink: 0;
     }
   }
 }
