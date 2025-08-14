@@ -6,6 +6,7 @@
   background-image: url("../../assets/home/desktop/image-hero.jpg");
   background-position: 60% 70%;
   background-repeat: no-repeat;
+  margin-bottom: 120px;
 
   @media (max-width: 880px) {
     background-image: url("../../assets/home/tablet/image-header.jpg");
@@ -17,13 +18,5 @@
     background-image: url("../../assets/home/mobile/image-header.jpg");
     background-position: center;
     background-size: contain;
-  }
-}
-
-.about-us {
-  padding: 200px 0px;
-
-  @media (max-width: 990px) {
-    padding: 96px 0px;
   }
 }

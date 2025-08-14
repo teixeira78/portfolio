@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding-top: 60px;
+  margin-bottom: 160px;
 
   @media (max-width: 745px) {
     display: grid;
