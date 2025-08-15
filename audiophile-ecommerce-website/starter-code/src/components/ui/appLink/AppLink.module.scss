@@ -1,7 +1,8 @@
 /* AppLink.module.css */
 .defaultStyle {
-  // display: inline-block;
+  display: inline-block;
   border-radius: 0;
+  border: none;
   text-transform: uppercase;
   padding: 15px 30px;
   font-weight: bold;
@@ -36,4 +37,14 @@
 .outlined:hover {
   background-color: var(--pure-black);
   color: var(--pure-white);
+}
+
+.text {
+  color: var(--pure-black);
+  opacity: 0.5;
+  text-transform: capitalize;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }

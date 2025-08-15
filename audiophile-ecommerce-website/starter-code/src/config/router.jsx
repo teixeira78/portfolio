@@ -3,6 +3,8 @@ import App from "../App";
 import BaseLayout from "../layout/BaseLayout";
 import Home from "../pages/home/Home";
 import HeaphonesPage from "../pages/headphonesPage/HeaphonesPage";
+import EarphonesPage from "../pages/earphonesPage/EarphonesPage";
+import SpeakersPage from "../pages/speakersPage/SpeakersPage";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
       {
         path: "/headphones",
         element: <HeaphonesPage />,
+      },
+      {
+        path: "/earphones",
+        element: <EarphonesPage />,
+      },
+      {
+        path: "/speakers",
+        element: <SpeakersPage />,
       },
     ],
   },

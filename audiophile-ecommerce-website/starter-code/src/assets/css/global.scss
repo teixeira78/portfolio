@@ -11,7 +11,7 @@
   --hover-grey: #4c4c4c;
 
   --font-family: "Manrope", sans-serif;
-  --button-transition-animation: all 0.2s ease-in-out;
+  --transition-animation: all 0.2s ease-in-out;
 }
 
 * {
@@ -34,4 +34,20 @@ body {
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
   position: relative;
+}
+
+.button-base-styles {
+  border-radius: 0;
+  border: none;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: auto;
+  font-family: inherit;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: var(--pure-white);
 }

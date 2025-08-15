@@ -2,13 +2,12 @@ import React from "react";
 import ProductPagesLayout from "../../components/productPagesLayout/ProductPagesLayout";
 import ProductDisplay from "../../components/productDisplay/ProductDisplay";
 
-function HeaphonesPage() {
+function EarphonesPage() {
   return (
-    <ProductPagesLayout title="Headphones">
-      <ProductDisplay />
+    <ProductPagesLayout title="Earphones">
       <ProductDisplay />
     </ProductPagesLayout>
   );
 }
 
-export default HeaphonesPage;
+export default EarphonesPage;

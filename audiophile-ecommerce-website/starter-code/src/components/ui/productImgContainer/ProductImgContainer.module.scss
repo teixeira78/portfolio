@@ -1,0 +1,15 @@
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 352px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--neutral-medium);
+
+  img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
