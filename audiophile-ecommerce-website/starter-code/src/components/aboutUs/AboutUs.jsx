@@ -3,7 +3,7 @@ import classes from "./AboutUs.module.scss";
 
 function AboutUs() {
   return (
-    <Container className={classes["aboutUs-container"]}>
+    <div className={classes["aboutUs-container"]}>
       <div className={classes["aboutUs-content"]}>
         <h1 className={classes.title}>
           Bringing you the <span>best</span> audio gear
@@ -18,7 +18,7 @@ function AboutUs() {
         </p>
       </div>
       <div className={classes["aboutUs-image"]}></div>
-    </Container>
+    </div>
   );
 }
 

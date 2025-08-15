@@ -5,6 +5,7 @@ import Home from "../pages/home/Home";
 import HeaphonesPage from "../pages/headphonesPage/HeaphonesPage";
 import EarphonesPage from "../pages/earphonesPage/EarphonesPage";
 import SpeakersPage from "../pages/speakersPage/SpeakersPage";
+import ProductDetailPage from "../pages/productDetailPage/ProductDetailPage";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/earphones",
-        element: <EarphonesPage />,
+        element: <ProductDetailPage />,
       },
       {
         path: "/speakers",

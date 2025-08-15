@@ -4,20 +4,33 @@ import classes from "./ProductDetailPage.module.scss";
 import HeadphonesImg from "../../assets/product-xx99-mark-two-headphones/mobile/image-product.jpg";
 import ProductImgContainer from "../../components/ui/productImgContainer/ProductImgContainer";
 import ProductDescription from "../../components/ui/productDescription/ProductDescription";
-import ProductCounter from "../../components/ui/productCounter/ProductCounter";
+import ProductCounter from "../../components/productCounter/ProductCounter";
 import AppButton from "../../components/ui/appButton/AppButton";
+import Container from "@mui/material/Container";
+import BoxContents from "../../components/boxContents/BoxContents";
+import AboutUs from "../../components/aboutUs/AboutUs";
+import ProductList from "../../components/productList/ProductList";
+import ProductGallery from "../../components/productGallery/ProductGallery";
+import RelatedProductsList from "../../components/relatedProductsList/RelatedProductsList";
 
-function ProductDetail() {
+function ProductDetailPage() {
   return (
-    <div>
-      <AppLink variant="text">Go Back</AppLink>
+    <Container className={classes["product-detail-container"]}>
+      <AppLink variant="text" className={classes["return-link"]}>
+        Go Back
+      </AppLink>
       <div className={classes["product-detail"]}>
-        <ProductImgContainer imgSrc={HeadphonesImg} />
-        <ProductDescription />
+        <ProductImgContainer
+          imgSrc={HeadphonesImg}
+          className={classes["img-container"]}
+        />
+        <ProductDescription className={classes["detail-description"]} />
         <span className={classes.price}>$2,999</span>
         <div className={classes["action-buttons"]}>
           <ProductCounter />
-          <AppButton>Add to Cart</AppButton>
+          <AppButton className={classes["add-to-cart-btn"]}>
+            Add to Cart
+          </AppButton>
         </div>
       </div>
       <div className={classes["product-features"]}>
@@ -42,9 +55,14 @@ function ProductDetail() {
             design aesthetic.
           </p>
         </div>
+        <BoxContents />
+        <ProductGallery />
+        <RelatedProductsList />
+        <ProductList />
+        <AboutUs />
       </div>
-    </div>
+    </Container>
   );
 }
 
-export default ProductDetail;
+export default ProductDetailPage;

@@ -4,11 +4,11 @@ import classes from "./ProductList.module.scss";
 
 function ProductList() {
   return (
-    <Container className={classes["product-list-container"]}>
+    <div className={classes["product-list-container"]}>
       <ProductCard className={classes["product-card"]} />
       <ProductCard />
       <ProductCard />
-    </Container>
+    </div>
   );
 }
 

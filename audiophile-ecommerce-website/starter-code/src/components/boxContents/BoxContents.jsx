@@ -8,6 +8,10 @@ function BoxContents() {
         <span className={classes.quantity}>1x</span>
         <p className={classes.item}>Headphone Unit</p>
       </div>
+      <div className={classes.content}>
+        <span className={classes.quantity}>1x</span>
+        <p className={classes.item}>Headphone Unit</p>
+      </div>
     </div>
   );
 }
