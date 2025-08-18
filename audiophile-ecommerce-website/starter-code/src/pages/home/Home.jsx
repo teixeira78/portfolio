@@ -4,11 +4,14 @@ import ProductsShowcase from "../../components/productsShowcase/ProductsShowcase
 import HeroSection from "../../components/heroSection/HeroSection";
 import AboutUs from "../../components/aboutUs/AboutUs";
 import Container from "@mui/material/Container";
+import AppModal from "../../components/modal/AppModal";
+import Cart from "../../components/cart/Cart";
 
 function Home() {
   return (
     <>
       <section id="#hero-section" className={classes["hero-section"]}>
+        <Cart />
         <HeroSection />
       </section>
       <section id="#product-list">

@@ -2,7 +2,6 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 15.5px;
   gap: 21px;
   background-color: var(--neutral-medium);
   font-size: 13px;
@@ -10,6 +9,7 @@
   font-weight: bold;
 
   .counter-button {
+    padding: 15px 15.5px;
     font-weight: bold;
     font-size: inherit;
     background-color: transparent;
@@ -18,7 +18,8 @@
     color: var(--pure-black);
     opacity: 0.25;
     transition: var(--button-transition-animation);
-
+    height: 100%;
+    width: 100%;
     &:hover {
       opacity: 1;
       color: var(--primary-orange);
