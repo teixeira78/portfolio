@@ -9,9 +9,11 @@ function ProductPagesLayout({ title = "HEADPHONES", children }) {
       <div className={classes["hero"]}>
         <h3 className={classes.title}>{title}</h3>
       </div>
-      <Container>{children}</Container>
-      <ProductList />
-      <AboutUs />
+      <Container>
+        {children}
+        <ProductList />
+        <AboutUs />
+      </Container>
     </div>
   );
 }

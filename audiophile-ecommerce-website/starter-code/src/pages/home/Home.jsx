@@ -3,6 +3,7 @@ import ProductList from "../../components/productList/ProductList";
 import ProductsShowcase from "../../components/productsShowcase/ProductsShowcase";
 import HeroSection from "../../components/heroSection/HeroSection";
 import AboutUs from "../../components/aboutUs/AboutUs";
+import Container from "@mui/material/Container";
 
 function Home() {
   return (
@@ -11,13 +12,17 @@ function Home() {
         <HeroSection />
       </section>
       <section id="#product-list">
-        <ProductList />
+        <Container>
+          <ProductList />
+        </Container>
       </section>
       <section id="#product-showcase">
         <ProductsShowcase />
       </section>
       <section id="#about-us" className={classes["about-us"]}>
-        <AboutUs />
+        <Container>
+          <AboutUs />
+        </Container>
       </section>
     </>
   );

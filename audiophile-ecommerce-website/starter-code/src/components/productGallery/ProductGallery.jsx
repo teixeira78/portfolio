@@ -1,7 +1,7 @@
 import classes from "./ProductGallery.module.scss";
-import Img1 from "../../assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg";
-import Img2 from "../../assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg";
-import Img3 from "../../assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg";
+import Img1 from "../../assets/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg";
+import Img2 from "../../assets/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg";
+import Img3 from "../../assets/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg";
 
 function ProductGallery() {
   return (

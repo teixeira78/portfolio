@@ -10,24 +10,31 @@
       margin-bottom: 32px;
     }
 
-    .detail-description {
-      margin-bottom: 24px;
-    }
+    .product-content {
+      .detail-description {
+        margin-bottom: 24px;
 
-    .price {
-      font-size: 18px;
-      font-family: inherit;
-      letter-spacing: 1.29px;
-      font-weight: bold;
-    }
+        p,
+        h3 {
+          max-width: 100%;
+        }
+      }
 
-    .action-buttons {
-      margin-top: 31px;
-      display: flex;
-      gap: 16px;
+      .price {
+        font-size: 18px;
+        font-family: inherit;
+        letter-spacing: 1.29px;
+        font-weight: bold;
+      }
 
-      .add-to-cart-btn {
-        font-size: 13px;
+      .action-buttons {
+        margin-top: 31px;
+        display: flex;
+        gap: 16px;
+
+        .add-to-cart-btn {
+          font-size: 13px;
+        }
       }
     }
   }
@@ -53,6 +60,68 @@
         margin-bottom: 25px;
         opacity: 0.5;
       }
+    }
+  }
+}
+
+@media (min-width: 745px) {
+  .product-detail-container {
+    .product-detail {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 69px;
+      .img-container {
+        margin-bottom: 0px;
+        height: 100%;
+      }
+
+      .product-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .detail-description {
+          h3 {
+            max-width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 880px) {
+  .product-detail-container {
+    .product-detail {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 69px;
+    }
+  }
+}
+
+@media (min-width: 990px) {
+  .product-detail-container {
+    .product-detail {
+      grid-template-columns: minmax(540px) 2fr;
+      gap: 60px;
+    }
+
+    .features-boxContents--container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 60px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-detail-container {
+    .product-detail {
+      gap: 100px;
+    }
+
+    .features-boxContents--container {
+      gap: 100px;
     }
   }
 }
