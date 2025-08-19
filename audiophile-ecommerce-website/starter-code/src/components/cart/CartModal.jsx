@@ -1,14 +1,25 @@
 import AppModal from "../modal/AppModal";
 import AppLink from "../ui/appLink/AppLink";
-import classes from "./Cart.module.scss";
+import classes from "./CartModal.module.scss";
 import CartItem from "./cartItem/CartItem";
 
 const modalStyle = {
   top: "133px",
   transform: "translate(-50%, 0%)",
+  maxWidth: "377px",
+
+  "@media(min-width: 745px)": {
+    transform: "translate(0%, 0%)",
+    left: "auto",
+    right: "30px !important",
+  },
+
+  "@media(min-width: 1160px)": {
+    right: "calc((100vw - 1100px) / 2) !important",
+  },
 };
 
-function Cart() {
+function CartModal() {
   return (
     <AppModal style={modalStyle}>
       <div className={classes.cart}>
@@ -34,4 +45,4 @@ function Cart() {
   );
 }
 
-export default Cart;
+export default CartModal;
